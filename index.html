@@ -78,7 +78,7 @@
     <h2>Vérifier vos notes</h2>
   <!-- Replace "YOUR Search Critiria Name -->
     <label for="inputId">Entrée votre numéro d'identifiant unique:</label>
-    <input type="text" id="inputId" placeholder="Student ID">
+    <input type="text" id="inputId" placeholder="IDElève">
 
     <button id="submitButton" onclick="fetchData()">Valider</button>
 
@@ -87,11 +87,11 @@
 
   <script>
     function fetchData() {
-      var studentId = document.getElementById('inputId').value;
+      var IDElève = document.getElementById('inputId').value;
 
       google.script.run
         .withSuccessHandler(displayResult)
-        .submitData(studentId);
+        .submitData(IDElève);
     }
 
     function displayResult(result) {
