@@ -8,7 +8,7 @@ function doGet() {
 function submitData(obj) {
   // Replace your google Sheet id below >>>>>>>>>>>>>>>>>>>>
   var spreadsheetId = "11x5kaH1st9Mjp4aaHIcYUhELV_f4Ctk7";
-  var sheetName = "Data";
+  var sheetName = "Notes Des Elèves";
   var ss = SpreadsheetApp.openById(spreadsheetId);
   var sheet = ss.getSheetByName(sheetName);
   var flag = 1;
